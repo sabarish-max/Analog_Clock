@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation1</title>
+  </head>
+  <style>
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+    body{
+      background-color: black;
+    }
+    .one{
+      height: 200px;
+      margin-top: 180px;
+      margin-left: 70px;
+      width: 200px;
+      border: 3px solid #919191;
+      display: flex;
+      box-shadow: inset 3px 3px 15px gray, inset 2px 2px 8px black, 2px 2px 45px red, 2px 2px 5px white;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background-color: white;
+    }
+    .one1{
+      position: relative;
+      height: 160px;
+      width: 160px;
+      border-radius: 50%;
+      display: flex;
+      box-shadow: inset -2px -2px 15px black;
+      justify-content: center;
+      align-items: center;
+      background-color: #919191;
+    }
+    .ln{
+      position: absolute;
+      height: 115px;
+      width: 2px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: flex-end;
+      background-color: red;
+      animation: sec 60s linear infinite;
+    }
+    .ll{
+      height: 40px;
+      width: 2px;
+      background-color: #919191;
+    }
+    .ln2{
+      position: absolute;
+      height: 85px;
+      width: 5px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: flex-end;
+      animation: hrr 43200s linear infinite;
+      background-color: black;
+    }
+    .ll2{
+      height: 25px;
+      width: 5px;
+      background-color: #919191;
+    }
+    .ln1{
+      position: absolute;
+      height: 137px;
+      width: 4px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: flex-end;
+      background-color: black;
+      transform: rotateZ(-40deg);
+      animation: min 3600s linear infinite;
+    }
+    .ll1{
+      height: 50px;
+      width: 4px;
+      background-color: #919191;
+    }
+    .lt{
+      position: absolute;
+      height: 6px;
+      width: 6px;
+      background-color: white;
+      border-radius: 50%;
+    }
+    @keyframes hrr{
+      0%{
+        transform: rotateZ(0deg);
+      }
+      100%{
+        transform: rotateZ(360deg);
+      }
+    }
+    @keyframes min{
+      0%{
+        transform: rotateZ(-40deg);
+      }
+      100%{
+        transform: rotateZ(320deg);
+      }
+    }
+    @keyframes sec{
+      0%{
+        transform: rotateZ(230deg);
+      }
+      100%{
+        transform: rotateZ(590deg);
+      }
+    }
+  </style>
+  <body>
+    <div class="one">
+     <div class="one1">
+       <div class="ln2"> 
+         <div class="ll2"></div>
+       </div>
+       <div class="ln1">
+         <div class="ll1"></div>
+       </div>
+       <div class="ln">
+         <div class="ll"></div>
+       </div>
+       <div class="lt"></div>
+     </div>
+    </div>
+  </body>
+</html>
